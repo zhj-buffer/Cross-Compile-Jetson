@@ -162,9 +162,9 @@ Install the python dependency on the Host and Target. You can find the requireme
 From now on, there are two possible ways to compiling the mxnet. You can chose step 4 or step 5.
 #### 4. Build under qemu simulation
 
->	root@C:/# mv mxnet ./
->	root@C:/#cd mxnet
->	root@C:/#cp make/config.mk .
+	root@C:/# mv mxnet ./
+	root@C:/#cd mxnet
+	root@C:/#cp make/config.mk .
 
 From jetson-nano-sd-r32.1-2019-03-18.zip official release Opencv 3.3.1 CUDA 10.0, Cudnn and TensorRT and pre-installed. If you want to use mxnet with CPP version, try to compile with USE_CPP_PACKAGE=1
 
@@ -185,9 +185,9 @@ Download the [cross compile toolchain](https://developer.nvidia.com/embedded/dlc
 
 We just need the gcc-4.8.5-aarch64.tgz for mxnet. if you want to cross compile the kernel gcc-4.8.5-armhf.tgz is also required.
 
->  alan@C:~/toolchain$ tar xpvf gcc-4.8.5-aarch64.tgz
->  alan@C:~/toolchain$ mv install gcc-4.8.5-aarch64
->  alan@C:~/toolchain$ 
+	alan@C:~/toolchain$ tar xpvf gcc-4.8.5-aarch64.tgz
+ 	alan@C:~/toolchain$ mv install gcc-4.8.5-aarch64
+  	alan@C:~/toolchain$ 
 
 	alan@C:~/toolchain/gcc-4.8.5-aarch64$ tree -d -L 2
 	.
