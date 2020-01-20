@@ -1,17 +1,17 @@
-##Mxnet cross compile ##
+## Mxnet cross compile
 
 Monday, 08. April 2019 01:13PM. The latest version of [jetpack](https://developer.nvidia.com/embedded/downloads) is 28.3 for now, feel free to update the link I attached as default.
 
-####Host:
+#### Host:
 	Ubuntu 18.04
-####Target: 
+#### Target: 
 	Jetson Nano
 
 
-####1. Prepare the build enviroment
-1. #####Download the Roofs Image from jetpack
+#### 1. Prepare the build enviroment
+##### 1. Download the Roofs Image from jetpack
 [jetson-nano-sd-r32.1-2019-03-18.zip](http://developer.nvidia.com/embedded/dlc/jetson-nano-dev-kit-sd-card-image)
-2. #####change to root user
+##### 2. change to root user
 >		alan@C:~$ sudo su - root
 >		root@C:~# mkdir -p /home/alan/rootfs-nano
 >		root@C:~# cd /home/alan/rootfs-nano && cp /home/alan/Downloads/jetson-nano-sd-r32.1-2019-03-18.zip .
@@ -118,10 +118,10 @@ Now you entered a simulation system and experience just like you are on target b
 	root@C:/# 
 
 Keep the session for the target, open another session for the Host.
-####2. Get the source code.
+#### 2. Get the source code.
 	git clone --recursive https://github.com/dmlc/mxnet
 	
-####3. Install the dependency
+#### 3. Install the dependency
 
 Install the dependency on the Host and Target in the same time.
 
@@ -160,7 +160,7 @@ Install the python dependency on the Host and Target. You can find the requireme
 	pip2 install --user -r requirements.txt
 	
 From now on, there are two possible ways to compiling the mxnet. You can chose step 4 or step 5.
-####4. Build under qemu simulation
+#### 4. Build under qemu simulation
 
 >	root@C:/# mv mxnet ./
 >	root@C:/#cd mxnet
@@ -179,7 +179,7 @@ From jetson-nano-sd-r32.1-2019-03-18.zip official release Opencv 3.3.1 CUDA 10.0
 	alan@C:~/src/mxnet$  scp ../lib/libmxnet.so dist/* jetbot@(ip):~/
 
 It will cost u several hours depend on your CPU version.  For the speed direct build > cross-compile > compile under simulation.
-####5. Build on the x86 Host with cross compile toolchain
+#### 5. Build on the x86 Host with cross compile toolchain
 
 Download the [cross compile toolchain](https://developer.nvidia.com/embedded/dlc/l4t-gcc-toolchain-64-bit-28-3) from Jetpack.
 
@@ -267,7 +267,7 @@ On the Host:
 	
 Then you can try on your Nano dev kit to run the mxnet.
 
-####6. Try on the Nano dev kit
+#### 6. Try on the Nano dev kit
 
 
 	jetbot@jetbot:~$ sudo -H pip3 install mxnet-1.5.0-py3-none-any.whl
