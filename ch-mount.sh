@@ -1,6 +1,6 @@
 #!/bin/bash
-#sudo cp /usr/bin/qemu-arm-static usr/bin/
-#sudo cp /usr/bin/qemu-aarch64-static usr/bin/
+sudo cp /usr/bin/qemu-arm-static usr/bin/
+sudo cp /usr/bin/qemu-aarch64-static usr/bin/
 
 function mnt() {
     echo "MOUNTING"
