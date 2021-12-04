@@ -1,8 +1,7 @@
-## Mxnet cross compile
-
-Monday, 08. April 2019 01:13PM. The latest version of [jetpack](https://developer.nvidia.com/embedded/downloads) is 28.3 for now, feel free to update the link I attached as default.
-
+## Cross compile
 Note: pls refer to https://developer.nvidia.com/embedded/downloads for the latest update on the image.
+
+The latest version of [jetpack](https://developer.nvidia.com/embedded/downloads) is 28.5 for now, feel free to update the link I attached as default.
 
 #### Host:
 	Ubuntu 18.04
