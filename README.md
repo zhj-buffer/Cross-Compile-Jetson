@@ -2,6 +2,8 @@
 
 Monday, 08. April 2019 01:13PM. The latest version of [jetpack](https://developer.nvidia.com/embedded/downloads) is 28.3 for now, feel free to update the link I attached as default.
 
+Note: pls refer to https://developer.nvidia.com/embedded/downloads for the latest update on the image.
+
 #### Host:
 	Ubuntu 18.04
 #### Target: 
