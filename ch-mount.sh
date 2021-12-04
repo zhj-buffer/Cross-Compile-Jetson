@@ -1,4 +1,5 @@
 #!/bin/bash
+# qemu-aarch64-static is from the host
 sudo cp /usr/bin/qemu-arm-static usr/bin/
 sudo cp /usr/bin/qemu-aarch64-static usr/bin/
 
